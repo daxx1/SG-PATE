@@ -1,2 +1,2 @@
 # SG-PATE
-paper《Squeezing More Utility on Privacy-Preserving Scalable Generator》
+Paper《Squeezing More Utility on Privacy-Preserving Scalable Generator》
