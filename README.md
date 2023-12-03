@@ -1,1 +1,1 @@
-# Fed-GAN
+# SG-PATE
