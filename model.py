@@ -847,7 +847,7 @@ class DCGAN(object):
             # The idex of each batch
             print("Train %d idxs" % batch_idxs)
             if epoch >= 19:
-                clip_value=np.percentile(self.grad_fincliplist[epoch-19:],q=80)
+                clip_value=np.percentile(self.grad_fincliplist[epoch-19:],q=40)
                 self.step_size = clip_value
             for idx in xrange(0, batch_idxs):
 
