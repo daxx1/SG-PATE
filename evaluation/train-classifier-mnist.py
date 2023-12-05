@@ -29,7 +29,7 @@ def pipeline():
     label = label.reshape((label.shape[0], nb_classes), order='F')
     x = x.reshape(x.shape[0], 28, 28, 1)
     from keras.datasets import mnist
-    (x_train, y_train), (x_test, y_test) = mnist.load_data('/usr/local/lib/python3.6/dist-packages/keras/datasets/mnist.npz')
+    (x_train, y_train), (x_test, y_test) = mnist.load_data()
     from keras.utils import np_utils
     y_train = np_utils.to_categorical(y_train, 10)
     y_test = np_utils.to_categorical(y_test, 10)
