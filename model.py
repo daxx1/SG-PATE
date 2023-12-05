@@ -440,7 +440,7 @@ class DCGAN(object):
             for i in range(0, 100000):
                 img = images[i]
                 img = Image.fromarray(img)
-                img = np.array(img.resize((32, 32), Image.BICUBIC))  # 修改分辨率，再转为array类
+                img = np.array(img.resize((32, 32), Image.BICUBIC))  # 
                 X_resized[i, :, :, :] = img
 
             y = np.random.randint(10, size=(100000, 1))
@@ -769,7 +769,7 @@ class DCGAN(object):
             data_x = data_x[0:2000]
             data_x = data_x.flatten().reshape(2000, 784)
             pca = PCA(n_components=20)
-            # newX = pca.fit_transform(x[0])     #等价于pca.fit(X) pca.transform(X)
+            # newX = pca.fit_transform(x[0])     #pca.fit(X) pca.transform(X)
             pca.fit(data_x)
             self.pca_components = pca.components_.T
             '''
