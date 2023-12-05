@@ -30,3 +30,9 @@ python main.py --checkpoint_dir mnist_teacher_4000_z_dim_50_c_5e-5/ --teachers_b
 ```
 
 it will generate 100,000 DP samples.
+
+### Evaluate 
+
+```shell script
+python evaluation/train-classifier-mnist.py --data $checkpoint_dir/eps-1.00.data
+```
