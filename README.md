@@ -19,5 +19,5 @@ including:
   
 
 ```shell script
-python main.py --checkpoint_dir mnist_teacher_4000_z_dim_50_c_1e-4/ --teachers_batch 40 --batch_teachers 100 --dataset mnist --train --sigma_thresh 3000 --sigma 1000 --step_size 5e-5 --max_eps 1 --nopretrain --z_dim 50 --batch_size 64
+python main.py --checkpoint_dir mnist_teacher_4000_z_dim_50_c_5e-5/ --teachers_batch 40 --batch_teachers 100 --dataset mnist --train --sigma_thresh 3000 --sigma 1000 --step_size 5e-5 --max_eps 1 --nopretrain --z_dim 50 --batch_size 64
 ```
